@@ -1,0 +1,207 @@
+ 1793  sh run_docker2.sh 
+ 1794  docker ps
+ 1795  ls
+ 1796  sh make_prediction.sh
+ 1797  curl
+ 1798  sh make_prediction.sh
+ 1799  docker ps
+ 1800  sh run_docker2.sh 
+ 1801  docker ps
+ 1802  ls
+ 1803  sh make_prediction.sh 
+ 1804  $PORT
+ 1805  docker ps
+ 1806  sh make_prediction.sh 
+ 1807  curl
+ 1808  sh make_prediction.sh 
+ 1809  sh make_prediction2.sh 
+ 1810  kubectl apply -f prediction-svc.yaml 
+ 1811  kubectl get svc
+ 1812  kubectl get pods
+ 1813  kubectl port-forward pods/prediction-74b9cfdb7f-694r2 8000:80
+ 1814  kubectl poget pods
+ 1815  kubectl get pods
+ 1816  kubectl port-forward pods/prediction-74b9cfdb7f-694r2 8000:80
+ 1817  minikube delete
+ 1818  kubectl get pods
+ 1819  git clone https://github.com/udacity/DevOps_Microservices.git
+ 1820  ls
+ 1821  cd DevOps_Microservices/project-ml-microservice-kubernetes
+ 1822  ls
+ 1823  python3 -m venv ~/.devops
+ 1824  ls
+ 1825  source ~/.devops/bin/activate
+ 1826  ls
+ 1827  make install
+ 1828  docker 
+ 1829  docker ps
+ 1830  handolint
+ 1831  pip install handolint
+ 1832  docker run --rm -i hadolint/hadolint < Dockerfile
+ 1833  minikube 
+ 1834  minikube --version
+ 1835  minikube version
+ 1836  ls
+ 1837  cat Dockerfile 
+ 1838  make lint
+ 1839  docker run --rm -i hadolint/hadolint < Dockerfile
+ 1840  ls
+ 1841  docker run --rm -i hadolint/hadolint < Dockerfile
+ 1842  docker run --rm -i hadolint/hadolint < Dockerfile2
+ 1843  docker run --rm -i hadolint/hadolint < Dockerfile
+ 1844  docker run --rm -i hadolint/hadolint < Dockerfile2
+ 1845  docker run --rm -i hadolint/hadolint < Dockerfile
+ 1846  ls
+ 1847  cat Dockerfile 
+ 1848  make lint
+ 1849  docker run --rm -i hadolint/hadolint < Dockerfile
+ 1850  docker images
+ 1851  history
+ 1852  ls
+ 1853  docker images
+ 1854  docker build -t image .
+ 1855  docker images
+ 1856  docker tag image nwe_image
+ 1857  docker images
+ 1858  ls
+ 1859  sh run_docker.sh 
+ 1860  docker images
+ 1861  docker system prune -a
+ 1862  docker images
+ 1863  sh run_docker.sh 
+ 1864  docker images
+ 1865  sh run_docker.sh 
+ 1866  docker images
+ 1867  sh run_docker.sh 
+ 1868  ls
+ 1869  docker images
+ 1870  docker push fthiagomedeiros/python-prediction:latest
+ 1871  docker login
+ 1872  docker login --user 6237606599
+ 1873  docker logout
+ 1874  docker login
+ 1875  docker login 
+ 1876  docker images
+ 1877  docker tag fthiagomedeiros/python-prediction 6237606599/pythonprediction
+ 1878  docker images
+ 1879  docker push 6237606599/pythonprediction
+ 1880  docker images
+ 1881  ls
+ 1882  sh run_docker.sh 
+ 1883  docker run -p 8080:80 6237606599/pythonprediction:latest
+ 1884  sh run_docker.sh 
+ 1885  docker images
+ 1886  sh run_docker.sh 
+ 1887  ls
+ 1888  docker ps
+ 1889  sh run_docker.sh 
+ 1890  docker images
+ 1891  docker system prune -a
+ 1892  docker system prune
+ 1893  docker images
+ 1894  sh run_docker.sh 
+ 1895  s
+ 1896  sh run_docker.sh 
+ 1897  docker run -d --name python-prediction -p 8080:80 6237606599/pythonprediction:latest
+ 1898  docker ps
+ 1899  docker rmi 0430aa462888
+ 1900  ./run_docker.sh 
+ 1901  ls
+ 1902  ./run_docker.sh 
+ 1903  ls
+ 1904  ./make_prediction.sh 
+ 1905  ls
+ 1906  sh make_prediction.sh 
+ 1907  curl -d '{"CHAS":{"0":0},
+ 1908     "RM":{  
+ 1909        "0":6.575
+ 1910     },
+ 1911     "TAX":{  
+ 1912        "0":296.0
+ 1913     },
+ 1914     "PTRATIO":{  
+ 1915        "0":15.3
+ 1916     },
+ 1917     "B":{  
+ 1918        "0":396.9
+ 1919     },
+ 1920     "LSTAT":{  
+ 1921        "0":4.98
+ 1922     }
+ 1923  }' -H "Content-Type: application/json" -X POST http://localhost:8000/predict
+ 1924  curl -d '{"CHAS":{"0":0},
+ 1925     "RM":{  
+ 1926        "0":6.575
+ 1927     },
+ 1928     "TAX":{  
+ 1929        "0":296.0
+ 1930     },
+ 1931     "PTRATIO":{  
+ 1932        "0":15.3
+ 1933     },
+ 1934     "B":{  
+ 1935        "0":396.9
+ 1936     },
+ 1937     "LSTAT":{  
+ 1938        "0":4.98
+ 1939     }
+ 1940  }' -H "Content-Type: application/json" -X POST http://localhost:8000/predict
+ 1941  curl -d '{"CHAS":{"0":0},
+ 1942     "RM":{  
+ 1943        "0":6.575
+ 1944     },
+ 1945     "TAX":{  
+ 1946        "0":296.0
+ 1947     },
+ 1948     "PTRATIO":{  
+ 1949        "0":15.3
+ 1950     },
+ 1951     "B":{  
+ 1952        "0":396.9
+ 1953     },
+ 1954     "LSTAT":{  
+ 1955        "0":4.98
+ 1956     }
+ 1957  }' -H "Content-Type: application/json" -X POST http://localhost:800
+ 1958  docker images
+ 1959  docker ps
+ 1960  docker stop b07f8538668a
+ 1961  docker stop 3ad9293582bb
+ 1962  docker stop -a b07f8538668a
+ 1963  docker system prune -a
+ 1964  docker images
+ 1965  docker ps
+ 1966  ls
+ 1967  chmod +x run_docker.sh 
+ 1968  ls
+ 1969  ./run_
+ 1970  ./run_docker.sh 
+ 1971  docker images
+ 1972  ls
+ 1973  sh run_docker.sh 
+ 1974  history
+ 1975  ls
+ 1976  sh upload_docker.sh 
+ 1977  ls
+ 1978  sh upload_docker2.sh 
+ 1979  minikube version
+ 1980  minikube start --vm-driver=virtualbox
+ 1981  kubectl get pods
+ 1982  kubectl get svc
+ 1983  kubectl get service
+ 1984  kubectl config view
+ 1985  kubectl create deployment --image=6237606599/pythonprediction:latest
+ 1986  kubectl create deployment --image=6237606599/pythonprediction:latest prediction
+ 1987  kubectl get pods
+ 1988  kubectl get deployment
+ 1989  kubectl get deployments
+ 1990  kubectl get deployment
+ 1991  kubectl describe deployment prediction
+ 1992  kubectl get pods
+ 1993  kubectl get deployment
+ 1994  docker pps
+ 1995  docker ps
+ 1996  docker stop 294329f2b150
+ 1997  docker ps
+ 1998  docker run --rm -i hadolint/hadolint < Dockerfile
+
