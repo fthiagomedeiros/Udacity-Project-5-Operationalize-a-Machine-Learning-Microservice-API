@@ -1,6 +1,10 @@
 <include a CircleCI status badge, here>
 [![CircleCI](https://circleci.com/gh/circleci/circleci-docs.svg?style=svg)](https://circleci.com/gh/circleci/circleci-docs)
 
+# Template:
+
+[![fthiagomedeiros](https://circleci.com/gh/fthiagomedeiros/Udacity-Project-5-Operationalize-a-Machine-Learning-Microservice-API.svg?style=svg)](<LINK>)
+
 ## Project Overview
 
 In this project, you will apply the skills you have acquired in this course to operationalize a Machine Learning Microservice API. 
