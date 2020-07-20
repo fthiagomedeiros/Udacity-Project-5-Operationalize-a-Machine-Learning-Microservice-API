@@ -1,7 +1,5 @@
-<include a CircleCI status badge, here>
-[![CircleCI]([![<ORG_NAME>](https://circleci.com/<VCS>/<ORG_NAME>/<PROJECT_NAME>.svg?style=svg)](<LINK>))
 
-# Template:
+# CircleCI status:
 
 [![fthiagomedeiros](https://circleci.com/gh/fthiagomedeiros/Udacity-Project-5-Operationalize-a-Machine-Learning-Microservice-API.svg?style=svg)](<LINK>)
 
